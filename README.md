@@ -6,8 +6,8 @@ Discover detailed information about your favorite bands and albums!
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/band-album-explorer.git
-   cd band-album-explorer
+   git clone https://github.com/yuvalaha/Bands-Albums-Explorer-Node.js.git
+   cd Bands-Albums-Explorer-Node.js
 
 2. Install dependencies:
     npm install
