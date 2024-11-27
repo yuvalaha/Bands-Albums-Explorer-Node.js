@@ -12,8 +12,7 @@ Discover detailed information about your favorite bands and albums!
 2. Install dependencies:
     npm install
 
-3. Navigate to src directory to start the server
-    cd src
+3. Start the server
     nodemon index.js
 
 4. Open the browser and go to:
