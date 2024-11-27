@@ -1,0 +1,30 @@
+<%- include('partials/navbar.ejs') %>
+<% if(locals.album) { %>
+<div class="card-container">
+    <div class="card">
+        <p>Album Name: <strong><%= album.name %></strong> </p>
+        <p>Artist: <strong><%= album.artist %></strong></p>
+        <img src=<%= album.image[3]['#text'] %>>
+    </div>
+    <div class="card">
+        <p class="band-bio"><%= bandBio %></p>
+    </div>
+    <div class="card">
+        <p>Song List:</p>
+        <% for(let i = 0; i < album.tracks.track.length; i++) { %>
+            <span><strong><%= i + 1 %>. <%= album.tracks.track[i].name%></strong>
+            <strong><%=    Math.floor(album.tracks.track[i].duration / 60) %>:<%= (album.tracks.track[i].duration % 60).toString().padStart(2, '0') %></strong></span>
+            
+        <% } %>
+        </div>
+    </div>
+<% } else { %>
+    <form id="myForm" method="post">
+        <label for="albumInput">Choose Your Band: </label>
+        <input type="text" id="bandInput" name="band" required>
+        <label for="albumInput">Choose Your Album: </label>
+        <input type="text" id="albumInput" name="album" required>
+        <button type="submit" >Search</button>
+    </form>
+<% } %>
+<%- include('partials/footer.ejs') %>

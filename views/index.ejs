@@ -1,0 +1,79 @@
+<%- include('partials/navbar.ejs') %>
+<section class="hero text-center bg-dark text-white py-5">
+    <div class="container">
+        <h1 class="display-4">Explore the World of Music: Discover Your Favorite Bands and Albums!</h1>
+        <p class="lead">Search for bands, albums, and dive into the musical journey</p>
+        <a href="/bands" class="btn btn-primary btn-lg">Explore Bands</a>
+    </div>
+</section>
+
+<section class="featured-bands py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Featured Bands</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="home-page-card">
+                    <img src="images/acdc.jpg" class="card-img-top" alt="Band Image">
+                    <div class="card-body">
+                        <h5 class="card-title">AC/DC</h5>
+                        <a href="/bands?band=AC DC" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home-page-card">
+                    <img src="images/oasis.jpg" class="card-img-top" alt="Band Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Oasis</h5>
+                        <a href="/bands?band=Oasis" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home-page-card">
+                    <img src="images/beatles.jpg" class="card-img-top" alt="Band Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Beatles</h5>
+                        <a href="/bands?band=the beatles" class="btn btn-secondary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="popular-albums py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Popular Albums</h2>
+        <div class="row popular-albums">
+            <!-- Example Album Cards -->
+            <div class="col-md-4">
+                <div class="home-page-album-card">
+                    <img src="images/back_in_black.jpg" class="card-img-top" alt="Album Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Back In Black</h5>
+                        <a href="/albums?album=back in black&band=ac/dc" class="btn btn-secondary">View Album</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="home-page-album-card">
+                    <img src="images/thriller.jpg" class="card-img-top" alt="Album Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Thriller</h5>
+                        <a href="/albums?album=thriller&band=michael jackson" class="btn btn-secondary">View Album</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add more album cards dynamically as needed -->
+        </div>
+    </div>
+</section>
+<section class="how-it-works py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">How It Works</h2>
+        <p>Search for your favorite bands and albums. Get album details, band profiles, and more!</p>
+    </div>
+</section>
+
+<%- include('partials/footer.ejs') %>

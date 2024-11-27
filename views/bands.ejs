@@ -1,0 +1,36 @@
+<%- include('partials/navbar') %>
+
+    <% if (locals.band){ %>
+        <div class="band-information">
+            <h2><%= band.name %></h2>
+            <p><%= bandProfile %></p>
+            <div class="band-members">
+                <% for(let i=0; i < band.members.length; i++) { %>
+                    <div class="member-card">
+                        <p><%= band.members[i].name %></p>
+                        <img src=<%= band.members[i].thumbnail_url %> alt="">
+                        
+                    </div>
+                    <% } %>
+            </div>
+            <h3 class="albums-title">Band Albums</h3>
+            <div class="band-albums">
+                <% for(let i = 0; i < allAlbums.length; i++) { %>
+                    <% if(allAlbums[i].name !== "(null)" && !allAlbums[i].name.includes('Remastered') && !allAlbums[i].name.includes('remastered')) { %>
+                    <div class="album-card">
+                        <p><%= allAlbums[i].name %></p>
+                        <img src=<%= allAlbums[i].image[3]['#text'] %> alt="">
+                    </div>
+                    <% } %>
+                <% } %>
+            </div>
+        </div>
+    <% } else { %>
+        <form action="/bands" method="post" id="myForm"  >
+            <label for="bandInput">Choose Your Band/ Singer: </label>
+            <input type="text" id="bandInput" name="band" required>
+            <button type="submit">Search</button>
+        </form>
+    <% } %>
+
+<%- include('partials/footer') %>

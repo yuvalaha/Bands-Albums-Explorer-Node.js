@@ -1,0 +1,333 @@
+/* General Styling: */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column ;
+    background-image: linear-gradient(135deg, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color:navy !important;
+    
+}
+.nav-link, .navbar-brand{
+    color: aliceblue !important;
+}
+
+/* Footer Styling */
+.my-footer  {
+    background-color:  navy !important;
+    color: white;
+}
+.footer-container {
+    /* height: 60px; */
+    width: 100%;
+    margin-top: 80px;
+}
+main {
+    flex: 1;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Band and Album Card Styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.card {
+	width: 350px;
+    height: 520px;
+    display: inline-flex; /* Outside - inline, inside - flex */
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, lightgreen, white);
+    margin: 10px;
+    margin-right: 45px;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    text-align: center;
+    ;
+}
+.band-bio {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* 404 Page Styling */
+
+.page-not-found{
+    overflow-x: hidden;
+    
+}
+
+.fullscreen-image{
+    top: 0;
+    left: 0;
+    width: 100vw;     
+    height: 100vh;    
+    object-fit: cover; 
+    z-index: -1;      
+}
+
+/* Band Page Styling */
+#myForm {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+#myForm label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: block;
+    color: navy;
+    font-weight: bold;
+}
+#myForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#myForm button {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#myForm button:hover {
+    background-color: darkblue;
+}
+
+
+
+.band-information{
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.band-information p {
+    text-align: justify;
+}
+
+.band-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.member-card {
+    width: 230px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, lightblue, white);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.member-card img {
+    width: 200px;
+    height: 200px;
+}
+.member-card p {
+    margin-top: 15px;
+    text-align: center;
+    font-family: Arial;
+    color: blue;
+    font-weight: 700;
+}
+.albums-title {
+    margin-top: 80px;
+    margin-bottom: -60px;
+    font-weight: bold;
+}
+.band-albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.album-card{
+    width: 220px;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, lightyellow, white);
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+    text-align: center;
+    margin: 100px;
+    margin-right: 60px;
+    
+}
+
+/* Home page Styling */
+.home-page-card {
+	width: 350px;
+    height: 400px;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: linear-gradient(90deg, rgb(160, 144, 238), white);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.home-page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.home-page-card img {
+    width: 100%;
+    height: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
+    margin-top: 10px;
+}
+
+.home-page-album-card {
+    width: 350px;
+    height: 450px;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: linear-gradient(90deg, rgb(170, 46, 46), white);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.home-page-album-card img {
+    height: 50vh;
+    width: 320px;
+}
+.popular-albums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About page Styling */
+.about-section {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: navy;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.about-section ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.about-section li {
+    font-size: 1rem;
+    background: linear-gradient(90deg, lightblue, white);
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: navy;
+}
+
+.about-section .text-justify {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+    text-align: justify;
+    margin-top: 15px;
+}
